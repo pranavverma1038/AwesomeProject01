@@ -29,7 +29,7 @@ export default function ActionCard() {
         </View>
         <View style={styles.footerContainer}>
             <TouchableOpacity onPress={()=>{openWebsite("https://www.tripadvisor.in/")}}>
-                <Text>Read More</Text>
+                <Text style={styles.footerContainerText}>Read More</Text>
             </TouchableOpacity>
             
         </View>
@@ -49,4 +49,7 @@ const styles = StyleSheet.create({
     },
     bodyContainer:{},
     footerContainer:{},
+    footerContainerText:{
+        color:'blue'
+    },
 })
